@@ -13,9 +13,9 @@ class Result {
      * INTEGER_ARRAY ar as parameter.
      */
 
-     static int simpleArraySum(List<Integer> ar) {
-        int total = 0; 
-        for (int i : ar) {
+     static long simpleArraySum(List<Long> ar) {
+        long total = 0; 
+        for (long i : ar) {
             total += i;
         }
         return total;
@@ -29,13 +29,13 @@ public class sum {
         System.out.println("enter length");
         int n = s.nextInt();
         //create list
-        List<Integer> numberArr = new ArrayList<Integer>();
+        List<Long> numberArr = new ArrayList<Long>();
         System.out.println("Enter number");
         for(int i = 0; i < n; i++) {
-            numberArr.add(s.nextInt());
+            numberArr.add(s.nextLong());
         }
         s.close();
-       int total = Result.simpleArraySum(numberArr);
+       long total = Result.simpleArraySum(numberArr);
        System.out.println(total);
     }
 }
