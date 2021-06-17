@@ -2,7 +2,7 @@ package Statistics;
 
 import java.util.*;
 
-public class day_1 {
+public class day1 {
     public static void main(String[] args) {
         /* Scanner s = new Scanner(System.in);
         int length = s.nextInt();
