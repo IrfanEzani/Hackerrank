@@ -5,7 +5,7 @@ public class migratoryBirds {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int len = s.nextInt();
-        int[] arr = new int[len], countArr = new int[6], finalArr = new int[len];
+        int[] arr = new int[len], countArr = new int[6];
         for(int i = 0; i < len; i++) {
             arr[i] = s.nextInt();
         }
