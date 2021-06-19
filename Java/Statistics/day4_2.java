@@ -1,18 +1,32 @@
 package Statistics;
-/**
- * day4 : binomial distribution
- */
-public class day4 {
-    public static void main(String[] args) {
-        int n = 6;
-        //turn ratio to probability
-        double ratio = 1.09, p = ratio / (1 + ratio), result = 0;
 
-        for (int x=  3; x <= n; x++) {
-            result+=probability(n, x, p);
-            System.out.println("current prob:" + probability(n, x, p));
+/**
+ * more binomial distribution
+ */
+public class day4_2 {
+
+    public static void main(String[] args) {
+        int n = 10;
+        //turn ratio to probability
+        double p = 0.12, result = 0, result2 = 0;
+
+        //calculate for atmost
+        for (int x = 0; x <= 2; x++) {
+            result+= probability(n, x, p);
+            System.out.println("x val:" + x);
         }
+        System.out.println("for no more than 2:");
         System.out.printf("%.3f", result);
+        System.out.println();
+        
+
+        //calculate for atleast
+        for (int x= 2; x <= n; x++) {
+            result2+=probability(n, x, p);
+            System.out.println("x val:" + x);
+        }
+        System.out.println("\nfor atleast 2:");
+        System.out.printf("%.3f", result2);
     }
 
     //calculate prob
