@@ -25,5 +25,6 @@ public class subArray {
             }
         }
         System.out.println("\nFinal counter=" + counter);
+        s.close();
     }
 }
