@@ -6,6 +6,7 @@ public class pangrams {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         String str = s.nextLine();
+        s.close();
         String lowered = str.toLowerCase();
         /* System.out.println("String:" + lowered); */
         char[] alphabets = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
