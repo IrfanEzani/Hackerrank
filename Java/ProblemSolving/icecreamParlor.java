@@ -14,6 +14,7 @@ public class icecreamParlor {
             }
             /* calculate(p, size, arr); */
             int[] result = icecreamParlorA2(p, arr);
+            System.out.println("\nAnswer:");
             for (int r : result) {
                 System.out.print(r + " ");
             }
@@ -37,11 +38,7 @@ public class icecreamParlor {
 		int frequency[] = new int[10];
 
 		Arrays.fill(frequency, -1);
-        
-        for (int i : frequency) {
-            System.out.print(i + ", ");
-        }
-
+    
         
 		for (int i = 0; i < n; i++) {
 			int x = arr[i];
@@ -65,8 +62,13 @@ public class icecreamParlor {
 				}
 			}
 
-            System.out.println("out of if statement");
+            System.out.println("\nout of if statement");
 			frequency[x] = i;
+            System.out.println("at x value " + x + " frequency[x] updated to " + i);
+            System.out.println("updated arr, outside loop:");
+                for (int f : frequency) {
+                    System.out.print(f + ", ");
+                }
 		}
 
 		return result;
