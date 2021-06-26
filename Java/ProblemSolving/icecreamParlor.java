@@ -19,6 +19,7 @@ public class icecreamParlor {
                 System.out.print(r + " ");
             }
         }
+        s.close();
     }
 
     static void calculate(int price, int choiceSize, int[] arr) {
