@@ -16,7 +16,7 @@ public class javaHashset {
             names.add("(" + pair_left[i] + "," + pair_right[i] + ")");
             System.out.println(names.size());
         }
-
+        s.close();
         
     }
 }

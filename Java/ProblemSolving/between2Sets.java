@@ -21,6 +21,7 @@ public class between2Sets {
             if(l%i==0){ count++;}
         }
         System.out.println(count);
+        in.close();
     }
 
     
