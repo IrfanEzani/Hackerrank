@@ -29,7 +29,7 @@ public class quickSort {
             return;
         }
         int pivot = array[(right+left)/2];
-        System.out.println("current pivot=" + pivot);
+        System.out.println("current pivot = " + pivot);
         //the index will be at the pivot point
         
         int index = partition(array, left, right, pivot);
